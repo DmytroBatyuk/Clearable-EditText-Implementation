@@ -68,8 +68,8 @@ private const val COMPOUND_DRAWABLE_RIGHT_INDEX = 2
  *  @param onCanceled - callbacks which is invoked when cancel button is clicked and input is cleared
  */
 fun EditText.makeClearableEditText(onIsNotEmpty: (() -> Unit)?, onCanceled: (() -> Unit)?) {
-    compoundDrawables[COMPOUND_DRAWABLE_RIGHT_INDEX]?.let { cancelDrawable ->
-        makeClearableEditText(onIsNotEmpty, onCanceled, cancelDrawable)
+    compoundDrawables[COMPOUND_DRAWABLE_RIGHT_INDEX]?.let { clearDrawable ->
+        makeClearableEditText(onIsNotEmpty, onCanceled, clearDrawable)
     }
 }
 
