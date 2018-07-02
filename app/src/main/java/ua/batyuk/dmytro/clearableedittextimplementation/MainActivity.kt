@@ -11,6 +11,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val username = findViewById<EditText>(R.id.username_text)
+        username.makeClearableEditText(null, null)
+
+        val password = findViewById<EditText>(R.id.password_text)
+        password.makeClearableEditText(null, null)
+
 // Uncomment that code if want add right cancel drawable to EditText programmatically
 //        addRightCancelDrawable(findViewById(R.id.username_text))
 //        addRightCancelDrawable(findViewById(R.id.password_text))
